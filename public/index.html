@@ -14,7 +14,7 @@
     <p class="font-Montserrat text-xl">Hello World!</p>
     <div class="w-64 h-64 bg-terciary"></div> -->
     <nav></nav>
-    <div id="tab_bar"></div>
+    
     <section class="w-full h-auto">
         <div id="home">
             <div class="w-full h-3/4">
@@ -110,7 +110,9 @@
             </div>
         </div>
         
+        
     </section>
+
     <footer class="w-full h-auto bg-gray-50 p-6 space-y-2">
         <p class="text-lg">Acerca de</p>
         <p class="text-sm text-gray-400">Inversionistas</p>
@@ -120,5 +122,42 @@
         <p class="text-sm text-gray-400">Platzi Travel, inc.</p>
         <p class="text-sm text-gray-400">Síguenos</p>
     </footer>
+    
+    <div class="w-full h-auto bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center" id="tab_bar">
+        <a ref="#home">
+            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-current text-gray-200" d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H7M17 8L19 10M17 8V18C17 18.2652 16.8946 18.5196 16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19H13M7 19C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18V14C8 13.7348 8.10536 13.4804 8.29289 13.2929C8.48043 13.1054 8.73478 13 9 13H11C11.2652 13 11.5196 13.1054 11.7071 13.2929C11.8946 13.4804 12 13.7348 12 14V18C12 18.2652 12.1054 18.5196 12.2929 18.7071C12.4804 18.8946 12.7348 19 13 19M7 19H13" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        
+        <a href="#rentas_destacadas">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-current text-primary" d="M21 21L15 15M17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+
+        <a href="#destacados">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-current text-gray-200" d="M3.34249 7.77789C3.56864 7.23192 3.90011 6.73584 4.31798 6.31798C4.73584 5.90011 5.23192 5.56864 5.77789 5.34249C6.32386 5.11634 6.90902 4.99994 7.49998 4.99994C8.09093 4.99994 8.6761 5.11634 9.22207 5.34249C9.76803 5.56864 10.2641 5.90011 10.682 6.31798L12 7.63598L13.318 6.31798C14.1619 5.47406 15.3065 4.99995 16.5 4.99995C17.6935 4.99995 18.8381 5.47406 19.682 6.31798C20.5259 7.1619 21 8.3065 21 9.49998C21 10.6935 20.5259 11.8381 19.682 12.682L12 20.364L4.31798 12.682C3.90011 12.2641 3.56864 11.768 3.34249 11.2221C3.11634 10.6761 2.99994 10.0909 2.99994 9.49998C2.99994 8.90902 3.11634 8.32386 3.34249 7.77789Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+                
+        </a>
+
+        <button>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-current text-gray-200" d="M15.1946 15.8217C16.9231 16.1748 18.7172 16.0122 20.354 15.354C19.684 17.0213 18.5303 18.45 17.0415 19.4562C15.5527 20.4624 13.7969 21.0001 12 21C9.91037 20.9977 7.88662 20.2687 6.27565 18.9378C4.66467 17.6069 3.56683 15.757 3.17031 13.7054C2.77378 11.6537 3.10328 9.52805 4.10232 7.69272C5.10135 5.85739 6.7077 4.42673 8.64599 3.646C7.98779 5.28277 7.82514 7.0769 8.17827 8.80535C8.53139 10.5338 9.38472 12.1204 10.6322 13.3678C11.8796 14.6153 13.4662 15.4686 15.1946 15.8217Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+                
+        </button>
+
+        <a href="">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-current text-gray-200" d="M14.8284 9.82843C15.5786 9.07828 16 8.06087 16 7C16 5.93913 15.5786 4.92172 14.8284 4.17157C14.0783 3.42143 13.0609 3 12 3C10.9391 3 9.92172 3.42143 9.17157 4.17157C8.42143 4.92172 8 5.93913 8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11C13.0609 11 14.0783 10.5786 14.8284 9.82843Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="fill-current text-gray-200" d="M7.05025 16.0503C8.36301 14.7375 10.1435 14 12 14C13.8565 14 15.637 14.7375 16.9497 16.0503C18.2625 17.363 19 19.1435 19 21H5C5 19.1435 5.7375 17.363 7.05025 16.0503Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+                
+                
+        </a>
+    </div>
 </body>
 </html>
