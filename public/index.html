@@ -18,12 +18,15 @@
     <section class="w-full h-auto">
         <div id="home">
             <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" id="">
-                    <button class="w-48 rounded-full text-lg text-primary font-semibold shadow-sm p-4 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">Explorar</button>
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-32 lg:justify-start">
+                    <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search" id="">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                        <p class="text-3xl ml-16 font-bold text-black">Encuentra más ubicaciones como esta</p>
+                    </div>
+                    <button class="w-48 rounded-full text-lg text-primary font-semibold shadow-sm p-4 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explorar</button>
                 </div>
-                <div class="w-full h-full">
-                    <img src="./img/sanFrancisco.jpg">
+                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg">
                 </div>
                 
             </div>
@@ -34,7 +37,7 @@
                 <div class="Card">
                     <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
                     <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                        <p class="text-white text-bold text-xl px-4 py-2">Norway</p>
+                        <p class="text-white text-bold text-xl px-4 py-2">Noruega</p>
                         <p class="text-white text-md px-4">Paisajes Increíbles</p>
                     </div>
                 </div>
@@ -62,8 +65,22 @@
                 <div class="Card">
                     <div class="w-full h-3/5 bg-switzerland bg-cover rounded-t-lg"></div>
                     <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                        <p class="text-white text-bold text-xl px-4 py-2">Switzerland</p>
+                        <p class="text-white text-bold text-xl px-4 py-2">Suiza</p>
                         <p class="text-white text-md px-4">Maravillosa para esquiar</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-europe bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg">
+                        <p class="text-terciary text-bold text-xl px-4 py-2">Europe</p>
+                        <p class="text-terciary text-md px-4">Tour por los lugares mas espectaculares</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-miami bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-white text-bold text-xl px-4 py-2">Miami</p>
+                        <p class="text-white text-md px-4">Las mejores playas</p>
                     </div>
                 </div>
             </div>
@@ -123,8 +140,8 @@
         <p class="text-sm text-gray-400">Síguenos</p>
     </footer>
     
-    <div class="w-full h-auto bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center" id="tab_bar">
-        <a ref="#home">
+    <div class="w-full h-auto bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden" id="tab_bar">
+        <a href="#home">
             <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-current text-gray-200" d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H7M17 8L19 10M17 8V18C17 18.2652 16.8946 18.5196 16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19H13M7 19C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18V14C8 13.7348 8.10536 13.4804 8.29289 13.2929C8.48043 13.1054 8.73478 13 9 13H11C11.2652 13 11.5196 13.1054 11.7071 13.2929C11.8946 13.4804 12 13.7348 12 14V18C12 18.2652 12.1054 18.5196 12.2929 18.7071C12.4804 18.8946 12.7348 19 13 19M7 19H13" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -136,7 +153,7 @@
             </svg>
         </a>
 
-        <a href="#destacados">
+        <a href="#recomendados">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-current text-gray-200" d="M3.34249 7.77789C3.56864 7.23192 3.90011 6.73584 4.31798 6.31798C4.73584 5.90011 5.23192 5.56864 5.77789 5.34249C6.32386 5.11634 6.90902 4.99994 7.49998 4.99994C8.09093 4.99994 8.6761 5.11634 9.22207 5.34249C9.76803 5.56864 10.2641 5.90011 10.682 6.31798L12 7.63598L13.318 6.31798C14.1619 5.47406 15.3065 4.99995 16.5 4.99995C17.6935 4.99995 18.8381 5.47406 19.682 6.31798C20.5259 7.1619 21 8.3065 21 9.49998C21 10.6935 20.5259 11.8381 19.682 12.682L12 20.364L4.31798 12.682C3.90011 12.2641 3.56864 11.768 3.34249 11.2221C3.11634 10.6761 2.99994 10.0909 2.99994 9.49998C2.99994 8.90902 3.11634 8.32386 3.34249 7.77789Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
