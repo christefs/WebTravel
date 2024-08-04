@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Platzi Travel</title>
 </head>
-<body class="font-Montserrat">
+<body class="font-Montserrat dark:bg-gray-900">
     <!--
     <p class="font-Montserrat text-xl">Hello World!</p>
     <div class="w-64 h-64 bg-terciary"></div> -->
-    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10">
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10 dark:bg-gray-800">
         <div class="h-auto w-auto">
-            <p class="text-xl text-primary font-black">Platzi Travel</p>
+            <p class="text-xl text-primary font-black dark:text-white">Platzi Travel</p>
         </div>
         <div class="flex space-x-8">
-            <a class="font-bold text-md text-primary" href="#home">Inicio</a>
-            <a class="font-bold text-md text-primary" href="#recomendados">Recomendados</a>
-            <a class="font-bold text-md text-primary" href="#rentas_destacadas">Rentas</a>
-            <a class="font-bold text-md text-primary" href="#faqs">FAQS</a>
-            <a class="font-bold text-md text-primary" href="#sobre_nosotros">Sobre nosotros</a>
+            <a class="font-bold text-md text-primary dark:text-white" href="#home">Inicio</a>
+            <a class="font-bold text-md text-primary dark:text-white" href="#recomendados">Recomendados</a>
+            <a class="font-bold text-md text-primary dark:text-white" href="#rentas_destacadas">Rentas</a>
+            <a class="font-bold text-md text-primary dark:text-white" href="#faqs">FAQS</a>
+            <a class="font-bold text-md text-primary dark:text-white" href="#sobre_nosotros">Sobre nosotros</a>
         </div>
         <div class="flex space-x-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path class="text-primary" stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            <path class="text-primary dark:text-white" stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
              
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="fill-current text-primary" d="M15.1946 15.8217C16.9231 16.1748 18.7172 16.0122 20.354 15.354C19.684 17.0213 18.5303 18.45 17.0415 19.4562C15.5527 20.4624 13.7969 21.0001 12 21C9.91037 20.9977 7.88662 20.2687 6.27565 18.9378C4.66467 17.6069 3.56683 15.757 3.17031 13.7054C2.77378 11.6537 3.10328 9.52805 4.10232 7.69272C5.10135 5.85739 6.7077 4.42673 8.64599 3.646C7.98779 5.28277 7.82514 7.0769 8.17827 8.80535C8.53139 10.5338 9.38472 12.1204 10.6322 13.3678C11.8796 14.6153 13.4662 15.4686 15.1946 15.8217Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <button id="toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current dark:text-white text-primary" d="M15.1946 15.8217C16.9231 16.1748 18.7172 16.0122 20.354 15.354C19.684 17.0213 18.5303 18.45 17.0415 19.4562C15.5527 20.4624 13.7969 21.0001 12 21C9.91037 20.9977 7.88662 20.2687 6.27565 18.9378C4.66467 17.6069 3.56683 15.757 3.17031 13.7054C2.77378 11.6537 3.10328 9.52805 4.10232 7.69272C5.10135 5.85739 6.7077 4.42673 8.64599 3.646C7.98779 5.28277 7.82514 7.0769 8.17827 8.80535C8.53139 10.5338 9.38472 12.1204 10.6322 13.3678C11.8796 14.6153 13.4662 15.4686 15.1946 15.8217Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
 
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-current text-gray-300" d="M14.8284 9.82843C15.5786 9.07828 16 8.06087 16 7C16 5.93913 15.5786 4.92172 14.8284 4.17157C14.0783 3.42143 13.0609 3 12 3C10.9391 3 9.92172 3.42143 9.17157 4.17157C8.42143 4.92172 8 5.93913 8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11C13.0609 11 14.0783 10.5786 14.8284 9.82843Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -56,54 +58,54 @@
                 
             </div>
         </div>
-        <div class="p-6" id="recomendados">
-            <p class="text-3xl font-semibold text-primary">Recomendados</p>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+        <div class="w-full h-auto" id="recomendados">
+            <p class="text-3xl font-semibold text-primary dark:text-white  pl-6 pt-6">Recomendados</p>
+            <div class="w-auto h-72 items-center p-6 mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
                 <div class="Card">
                     <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white text-bold text-xl px-4 py-2">Noruega</p>
                         <p class="text-white text-md px-4">Paisajes Increíbles</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 bg-new_york bg-cover rounded-t-lg"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-terciary text-bold text-xl px-4 py-2">New York</p>
-                        <p class="text-terciary text-md px-4">La gran manzana</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-terciary text-bold text-xl px-4 py-2 dark:text-white">New York</p>
+                        <p class="text-terciary text-md px-4 dark:text-white">La gran manzana</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 bg-yosemite bg-cover rounded-t-lg"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white text-bold text-xl px-4 py-2">yosemite</p>
                         <p class="text-white text-md px-4">Un descanso del mundo</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 bg-seattle bg-cover rounded-t-lg"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-terciary text-bold text-xl px-4 py-2">Seattle</p>
-                        <p class="text-terciary text-md px-4">Gran ciudad</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-terciary text-bold text-xl px-4 py-2 dark:text-white">Seattle</p>
+                        <p class="text-terciary text-md px-4 dark:text-white">Gran ciudad</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 bg-switzerland bg-cover rounded-t-lg"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white text-bold text-xl px-4 py-2">Suiza</p>
                         <p class="text-white text-md px-4">Maravillosa para esquiar</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 bg-europe bg-cover rounded-t-lg"></div>
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-terciary text-bold text-xl px-4 py-2">Europe</p>
-                        <p class="text-terciary text-md px-4">Tour por los lugares mas espectaculares</p>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-terciary text-bold text-xl px-4 py-2 dark:text-white">Europe</p>
+                        <p class="text-terciary text-md px-4 dark:text-white">Tour por los lugares mas espectaculares</p>
                     </div>
                 </div>
                 <div class="Card">
                     <div class="w-full h-3/5 bg-miami bg-cover rounded-t-lg"></div>
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
                         <p class="text-white text-bold text-xl px-4 py-2">Miami</p>
                         <p class="text-white text-md px-4">Las mejores playas</p>
                     </div>
@@ -112,14 +114,15 @@
             
         </div>
         <div class="px-2 h-full w-full lg:px-6" id="rentas_destacadas">
-            <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas destacadas</p>
+            <p class="text-3xl text-primary font-semibold pb-6 mt-6 dark:text-white">Rentas destacadas</p>
             <div class="w-full h-auto flex flex-col items-center justify-center">
                 
                 
-                <div class="w-full h-96 bg-chicago bg-cover rounded-xl mb-8 lg:bg-center">
-                    <p class="CardTitle lg:text-black">Chicago</p>
-                    <p class="text-sm pl-8 text-black mr-24 lg:text-lg">2 habitaciones, baño y cocina</p>
-                </div>
+                    <div class="w-full h-96 bg-chicago bg-cover rounded-xl mb-8 lg:bg-center">
+                        <p class="CardTitle lg:text-black">Chicago</p>
+                        <p class="text-sm pl-8 text-black mr-24 lg:text-lg">2 habitaciones, baño y cocina</p>
+                    </div>
+                
                 
                 
                 
@@ -148,18 +151,18 @@
 
         <div class="w-full h-full" id="faqs">
             <div class="w-full h-full px-6 flex flex-col space-y-4">
-                <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+                <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQS</p>
                 <div>
-                    <p class="text-xl font-medium text-primary">Métodos de pago</p>
-                    <p class="text-md pt-2">Aceptamos Visa, MasterCard, American Express, Paypal y Binance</p>
+                    <p class="text-xl font-medium text-primary dark:text-white">Métodos de pago</p>
+                    <p class="text-md pt-2 dark:text-white">Aceptamos Visa, MasterCard, American Express, Paypal y Binance</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Política de cancelación</p>
-                    <p class="text-md pt-2">Aceptamos Visa, MasterCard, American Express, Paypal y Binance</p>
+                    <p class="text-xl font-medium text-primary dark:text-white">Política de cancelación</p>
+                    <p class="text-md pt-2 dark:text-white">Aceptamos Visa, MasterCard, American Express, Paypal y Binance</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Estadías largas</p>
-                    <p class="text-md pt-2">Aceptamos Visa, MasterCard, American Express, Paypal y Binance</p>
+                    <p class="text-xl font-medium text-primary dark:text-white">Estadías largas</p>
+                    <p class="text-md pt-2 dark:text-white">Aceptamos Visa, MasterCard, American Express, Paypal y Binance</p>
                 </div>
             </div>
         </div>
@@ -177,18 +180,16 @@
         <p class="text-sm text-gray-400">Síguenos</p>
     </footer>
     
-    <div class="w-full h-12 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden" id="tab_bar">
+    <div class="w-full h-12 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden dark:bg-gray-800" id="tab_bar">
         <a href="#home">
             <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="fill-current text-gray-200" d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H7M17 8L19 10M17 8V18C17 18.2652 16.8946 18.5196 16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19H13M7 19C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18V14C8 13.7348 8.10536 13.4804 8.29289 13.2929C8.48043 13.1054 8.73478 13 9 13H11C11.2652 13 11.5196 13.1054 11.7071 13.2929C11.8946 13.4804 12 13.7348 12 14V18C12 18.2652 12.1054 18.5196 12.2929 18.7071C12.4804 18.8946 12.7348 19 13 19M7 19H13" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+                <path class="fill-current text-gray-200" d="M1 10L3 8M3 8L10 1L17 8M3 8V18C3 18.2652 3.10536 18.5196 3.29289 18.7071C3.48043 18.8946 3.73478 19 4 19H7M17 8L19 10M17 8V18C17 18.2652 16.8946 18.5196 16.7071 18.7071C16.5196 18.8946 16.2652 19 16 19H13M7 19C7.26522 19 7.51957 18.8946 7.70711 18.7071C7.89464 18.5196 8 18.2652 8 18V14C8 13.7348 8.10536 13.4804 8.29289 13.2929C8.48043 13.1054 8.73478 13 9 13H11C11.2652 13 11.5196 13.1054 11.7071 13.2929C11.8946 13.4804 12 13.7348 12 14V18C12 18.2652 12.1054 18.5196 12.2929 18.7071C12.4804 18.8946 12.7348 19 13 19M7 19H13" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
         </a>
         
-        <a href="#rentas_destacadas">
-            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="text-primary" d="M21 21L15 15M17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path class="text-primary" stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
-        </a>
 
         <a href="#recomendados">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +198,7 @@
                 
         </a>
 
-        <button>
+        <button id="toggle-sm">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-current text-gray-200" d="M15.1946 15.8217C16.9231 16.1748 18.7172 16.0122 20.354 15.354C19.684 17.0213 18.5303 18.45 17.0415 19.4562C15.5527 20.4624 13.7969 21.0001 12 21C9.91037 20.9977 7.88662 20.2687 6.27565 18.9378C4.66467 17.6069 3.56683 15.757 3.17031 13.7054C2.77378 11.6537 3.10328 9.52805 4.10232 7.69272C5.10135 5.85739 6.7077 4.42673 8.64599 3.646C7.98779 5.28277 7.82514 7.0769 8.17827 8.80535C8.53139 10.5338 9.38472 12.1204 10.6322 13.3678C11.8796 14.6153 13.4662 15.4686 15.1946 15.8217Z" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -213,5 +214,19 @@
                 
         </a>
     </div>
+    <script>
+        const htmlElement = document.querySelector("html")
+        const toggleButton = document.querySelector("#toggle")
+        const toggleButtonSm = document.querySelector("#toggle-sm")
+
+        toggleButton.addEventListener("click", () => toggleDarkMode() )
+        toggleButtonSm.addEventListener("click", () => toggleDarkMode() )
+
+        const toggleDarkMode = () => {
+            htmlElement.classList.contains("dark")?
+            htmlElement.classList.remove("dark") :
+            htmlElement.classList.add("dark")
+        }
+    </script>
 </body>
 </html>
