@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  content: ["./public/index.html", "./public/profile.html", "./src/**/*.{html,js}"],
   darkMode: 'class',
   theme: {
     extend: {
@@ -23,14 +23,16 @@ module.exports = {
       },
       backgroundColor: theme => ({
         ...theme('colors'),
-        'primary': '#CC2D4A',
+        'primaryBg': '#CC2D4A',
         'secondary': '#8FA206',
         'terciary': '#61AEC9'
+        
       }),
       textColor:{
         'primary': '#CC2D4A',
         'secondary': '#8FA206',
-        'terciary': '#61AEC9'
+        'terciary': '#61AEC9',
+        'fourth': '#4525d4 '
       },
       fontFamily:{
         Montserrat:['Montserrat', 'sans-serif']
