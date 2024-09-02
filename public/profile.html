@@ -48,9 +48,12 @@
         </div>
         <div class="w-full h-auto flex flex-col justify-center bg-sky-100 p-10">
             <p class="text-3xl text-fourth font-bold mb-5">Tus viajes</p>
-            <div class="w-full h-auto flex flex-col justify-center items-center space-y-5">
+            <div class="w-full h-auto flex flex-col justify-center items-center space-y-5 lg:flex-row lg:space-y-0 lg:space-x-7">
                 <div class="w-full h-auto max-w-3xl">
-                    <img class="w-full h-full rounded-t-lg" src="./img/miami.jpg">
+                    
+                    <img class="w-full h-full rounded-t-lg lg:max-h-60" src="./img/miami.jpg">
+                    
+                    
                     <div class="bg-white p-5 text-sm rounded-b-lg">
                         <p class="font-bold text-base">Miami</p>
                         <p><span class="font-semibold">Ida: </span>3 de agosto de 2019</p>
@@ -58,7 +61,10 @@
                     </div>
                 </div> 
                 <div class="w-full h-auto max-w-3xl">
-                    <img class="w-full h-full rounded-t-lg" src="./img/Cartagena.jpg">
+                    
+                    <img class="w-full h-full rounded-t-lg lg:max-h-60" src="./img/Cartagena.jpg">
+                    
+                    
                     <div class="bg-white p-5 text-sm rounded-b-lg">
                         <p class="font-bold text-base">Cartagena</p>
                         <p><span class="font-semibold">Ida: </span>15 de junio de 2022</p>
@@ -71,9 +77,9 @@
         </div>
         <div class="w-full h-auto flex flex-col justify-center bg-sky-200 p-10">
             <p class="text-3xl text-fourth font-bold mb-5">Tus reservas</p>
-            <div class="w-full h-auto flex flex-col justify-center items-center space-y-5">
+            <div class="w-full h-auto flex flex-col justify-center items-center space-y-5 lg:flex-row lg:space-y-0 lg:space-x-7">
                 <div class="w-full h-auto max-w-3xl">
-                    <img class="w-full h-full rounded-t-lg" src="./img/new_york.jpg">
+                    <img class="w-full h-full rounded-t-lg lg:max-h-56" src="./img/new_york.jpg">
                     <div class="bg-white p-5 text-sm rounded-b-lg">
                         <p class="font-bold text-base">New York</p>
                         <p><span class="font-semibold">Ida: </span>15 de septiembre de 2024</p>
@@ -81,7 +87,7 @@
                     </div>
                 </div> 
                 <div class="w-full h-auto max-w-3xl">
-                    <img class="w-full h-full rounded-t-lg" src="./img/SanAndres.jpg">
+                    <img class="w-full h-full rounded-t-lg lg:max-h-56" src="./img/SanAndres.jpg">
                     <div class="bg-white p-5 text-sm rounded-b-lg">
                         <p class="font-bold text-base">San Andrés</p>
                         <p><span class="font-semibold">Ida: </span>10 de diciembre de 2024</p>
@@ -89,6 +95,66 @@
                     </div>
                 </div> 
                 
+            </div>
+            
+        </div>
+
+        <div class="w-full h-auto" id="recomendados">
+            <p class="text-3xl font-semibold text-primary dark:text-white  pl-6 pt-6">Recomendados</p>
+            <div class="w-auto h-auto items-center p-6 mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                <div class="Card h-full">
+                    <div class="w-full h-full bg-norway bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-full bg-secondary rounded-b-lg dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2">Noruega</p>
+                        <p class="text-white text-sm px-4">Partiendo desde Bogotá</p>
+                        <p class="text-white text-sm px-4">Hotel + Vuelo + Traslado + Asistencia</p>
+                        <p class="text-white text-lg px-4">1.910 </p>
+                        <p class="text-white text-sm px-4">Incluye impuestos, tasas y cargos</p>
+                    </div>
+                </div>
+                <!--
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-new_york bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-terciary text-bold text-xl px-4 py-2 dark:text-white">New York</p>
+                        <p class="text-terciary text-md px-4 dark:text-white">La gran manzana</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-yosemite bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2">yosemite</p>
+                        <p class="text-white text-md px-4">Un descanso del mundo</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-seattle bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-terciary text-bold text-xl px-4 py-2 dark:text-white">Seattle</p>
+                        <p class="text-terciary text-md px-4 dark:text-white">Gran ciudad</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-switzerland bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2">Suiza</p>
+                        <p class="text-white text-md px-4">Maravillosa para esquiar</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-europe bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg dark:bg-gray-800">
+                        <p class="text-terciary text-bold text-xl px-4 py-2 dark:text-white">Europe</p>
+                        <p class="text-terciary text-md px-4 dark:text-white">Tour por los lugares mas espectaculares</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 bg-miami bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg dark:bg-gray-700">
+                        <p class="text-white text-bold text-xl px-4 py-2">Miami</p>
+                        <p class="text-white text-md px-4">Las mejores playas</p>
+                    </div>
+                </div> -->
             </div>
             
         </div>
