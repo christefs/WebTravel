@@ -8,6 +8,7 @@ module.exports = {
         'bali': "url('../img/bali.jpg')",
         'chicago': "url('../img/chicago.jpg')",
         'europe': "url('../img/europe.jpg')",
+        'europe2': "url('../img/Europe2.jpg')",
         'iceland': "url('../img/iceland.jpg')",
         'LA': "url('../img/LA.jpg')",
         'miami': "url('../img/miami.jpg')",
@@ -21,6 +22,8 @@ module.exports = {
         'yosemite': "url('../img/yosemite.jpg')",
         'cartagena': "url('../img/Cartagena.jpg')",
         'san_andres': "url('../img/SanAndres.jpg')",
+        'cancun': "url('../img/Cancun.jpg')",
+        'rio': "url('../img/Rio_de_Janeiro.jpg')"
 
       },
       backgroundColor: theme => ({
