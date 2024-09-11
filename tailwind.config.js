@@ -30,14 +30,16 @@ module.exports = {
         ...theme('colors'),
         'primaryBg': '#CC2D4A',
         'secondary': '#8FA206',
-        'terciary': '#61AEC9'
+        'terciary': '#61AEC9',
+        'fourth': '#F9FAFB'
         
       }),
       textColor:{
         'primary': '#CC2D4A',
         'secondary': '#8FA206',
         'terciary': '#61AEC9',
-        'fourth': '#4525d4 '
+        'fourth': '#4525d4 ',
+        'fifth': '#A8A29E'
       },
       fontFamily:{
         Montserrat:['Montserrat', 'sans-serif']
